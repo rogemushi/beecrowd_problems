@@ -4,9 +4,10 @@ raizes_lista = raizes.split(" ")
 pode = True
 
 def raiz(zap):
-    delta = (float(zap[1])**2) - 4 * (float(zap[0]))*(float(zap[2]))
-    x1 = (-float(zap[1]) + math.sqrt(delta))/(2*float(zap[0]))
-    x2 = (-float(zap[1]) - math.sqrt(delta))/(2*float(zap[0]))
+    delta = (float(zap[1])**2) - (4 * (float(zap[0]))*(float(zap[2])))
+    raiz_delta = math.sqrt(delta)
+    x1 = (-float(zap[1]) + raiz_delta)/(2*float(zap[0]))
+    x2 = (-float(zap[1]) - raiz_delta)/(2*float(zap[0]))
 
 
     print(f"R1 = {x1:.5f}")
@@ -21,3 +22,6 @@ for i in raizes_lista:
 
 if pode == True:
     raiz(raizes_lista)
+
+
+# terminar de fazer o algorítmo
