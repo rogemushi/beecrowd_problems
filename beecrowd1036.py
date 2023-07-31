@@ -21,5 +21,3 @@ for i in raizes_lista:
 
 if pode == True:
     raiz(raizes_lista)
-
-
